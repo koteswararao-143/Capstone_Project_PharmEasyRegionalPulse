@@ -5,24 +5,24 @@ The same verified finding is reframed below for two audiences: an executive and 
 ## 1. Executive audience — Situation / Complication / Resolution
 
 ### Situation
-Guntur sales increased from **₹62,442.27 in April 2026 to ₹138,738.93 in May 2026**, a verified month-over-month movement of **+122.19%**. [HIGH]
+Guntur sales increased from **₹62,442.27 in April 2026 to ₹138,738.93 in May 2026**, a verified month-over-month movement of **+122.19%**. 
 
 ### Complication
-A movement this large is a review signal, but the number by itself does not establish why the change happened. The May→June movement also reversed direction, so the evidence should be treated as a performance signal rather than a confirmed external cause. [MEDIUM]
+A movement this large is a review signal, but the number by itself does not establish why the change happened. The May→June movement also reversed direction, so the evidence should be treated as a performance signal rather than a confirmed external cause. 
 
 ### Resolution
-Use the cleaned, SQL-backed regional and category detail to review Guntur's April→May change before making an operational decision; the dashboard provides the supporting evidence in one place. [MEDIUM]
+Use the cleaned, SQL-backed regional and category detail to review Guntur's April→May change before making an operational decision; the dashboard provides the supporting evidence in one place. 
 
 ## 2. Regional manager audience — Overview / Category / Detail
 
 ### Overview
-The headline is Guntur's **+122.19% April→May sales movement**, calculated from ₹62,442.27 in April and ₹138,738.93 in May. [HIGH]
+The headline is Guntur's **+122.19% April→May sales movement**, calculated from ₹62,442.27 in April and ₹138,738.93 in May. 
 
 ### Category
-The category breakdown in the dashboard shows which of the six categories contributed to the selected region's sales, so the manager can see whether the headline movement is concentrated in a specific category. [LOW]
+The category breakdown in the dashboard shows which of the six categories contributed to the selected region's sales, so the manager can see whether the headline movement is concentrated in a specific category. 
 
 ### Detail
-The regional-month table provides the supporting sales, profit, and distinct-order values used by the dashboard. The underlying SQL workflow retains the zero-order Kurnool region through a LEFT JOIN, which is also why the detail layer can be reconciled to the master region list. [LOW]
+The regional-month table provides the supporting sales, profit, and distinct-order values used by the dashboard. The underlying SQL workflow retains the zero-order Kurnool region through a LEFT JOIN, which is also why the detail layer can be reconciled to the master region list. 
 
 ## Anticipated pushback & Q&A
 
