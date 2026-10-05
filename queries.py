@@ -20,7 +20,8 @@ def run_queries():
         GROUP BY order_id 
         HAVING COUNT(*) > 1
     """)
-    print("Duplicate order IDs:", cur.fetchall())
+    duplicates = cur.fetchall()
+    print("Duplicate order IDs:", duplicates if duplicates else "None")
 
     # 3. Null checks
     cur.execute("""
@@ -42,4 +43,35 @@ def run_queries():
 
     # 5. Region × month sales
     cur.execute("""
-        SELECT region, substr(order
+        SELECT region, substr(order_date,1,7) AS month, SUM(sales_inr) AS total_sales
+        FROM orders_clean
+        GROUP BY region, month
+        ORDER BY region, month
+    """)
+    sales = cur.fetchall()
+    print("Region × month sales (first 10 rows):", sales[:10])
+
+    # 6. Region × month profit
+    cur.execute("""
+        SELECT region, substr(order_date,1,7) AS month, SUM(profit_inr) AS total_profit
+        FROM orders_clean
+        GROUP BY region, month
+        ORDER BY region, month
+    """)
+    profit = cur.fetchall()
+    print("Region × month profit (first 10 rows):", profit[:10])
+
+    # 7. Distinct orders per region × month
+    cur.execute("""
+        SELECT region, substr(order_date,1,7) AS month, COUNT(DISTINCT order_id) AS distinct_orders
+        FROM orders_clean
+        GROUP BY region, month
+        ORDER BY region, month
+    """)
+    distinct_orders = cur.fetchall()
+    print("Region × month distinct orders (first 10 rows):", distinct_orders[:10])
+
+    conn.close()
+
+if __name__ == "__main__":
+    run_queries()
