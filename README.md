@@ -4,8 +4,8 @@
 
 - **Dashboard ('app.py') — interactive exploration:** shows overall KPIs, category shares, regional trends, and monthly detail tables, all connected by one region filter.  
 - **CII narrative:** explains flagged regional changes in Context–Insight–Implication format using verified metrics.  
-- **Memo ('memo.md') — recommendation:** provides the seven‑section memo, with each factual statement tagged for risk level.  
-- **Presentation storyline ('presentation_storyline.md') — live defense:** reframes the Guntur swing for executives and managers, plus anticipated pushback questions with answers.
+- **Memo ('memo.md') — :** provides the seven‑section memo, with each factual statement tagged for risk level.  
+- **Presentation storyline ('presentation_storyline.md') — :** reframes the Guntur swing for executives and managers, plus anticipated pushback questions with answers.
 
 **Order for reviewer:** start with the dashboard → then the CII narrative → next the memo → finally the presentation storyline.
 
