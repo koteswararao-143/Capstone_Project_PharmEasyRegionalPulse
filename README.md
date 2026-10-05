@@ -1,22 +1,12 @@
 # PharmEasy Regional Pulse
 
-**Headline finding:** Guntur's April→May sales moved from ₹62,442.27 to ₹138,738.93, a verified **+122.19%** month-over-month swing. [HIGH]
+**Key finding:** In Guntur, sales rose sharply from ₹62,442.27 in April to ₹138,738.93 in May — a confirmed **+122.19%** month‑to‑month increase.
 
-- **Streamlit dashboard (`app.py`) — live data exploration:** connects the overview KPIs, category breakdown, regional trends/comparison, and regional-month detail through one working region filter.
-- **CII narrative (embedded in the dashboard) — what the data means:** turns flagged regional movement into Context–Insight–Implication blocks using Part 2 metrics.
-- **One-page memo (`memo.md`) — the recommendation:** gives the seven-field recommendation memo and risk-tags factual claims.
-- **Presentation storyline (`presentation_storyline.md`) — how you would defend it live:** reframes the same Guntur finding for an executive and a regional manager, then provides anticipated pushback Q&A.
+- **Dashboard ('app.py') — interactive exploration:** shows overall KPIs, category shares, regional trends, and monthly detail tables, all connected by one region filter.  
+- **CII narrative (inside the dashboard):** explains flagged regional changes in Context–Insight–Implication format using verified metrics.  
+- **Memo ('memo.md') — recommendation:** provides the seven‑section memo, with each factual statement tagged for risk level.  
+- **Presentation storyline ('presentation_storyline.md') — live defense:** reframes the Guntur swing for executives and managers, plus anticipated pushback questions with answers.
 
-**Reviewer consumption order:** dashboard → CII narrative → memo → presentation storyline.
+**Order for reviewer:** start with the dashboard → then the CII narrative → next the memo → finally the presentation storyline.
 
-**Single unverified assumption:** the memo does not establish an external cause for Guntur's movement; any competitor, festival, campaign, demand, or other external explanation remains a hypothesis until additional evidence is checked. [LOW]
-
-## Setup and run
-
-Use Python 3.10+.
-
-```bash
-python -m pip install pandas streamlit plotly
-python generate_dataset.py && python clean_data.py && python build_db.py
-streamlit run app.py
-```
+**Unverified assumption:** the memo does not claim any external driver for Guntur’s spike; factors like competitor moves, campaigns, or festivals are treated only as hypotheses until proven with extra evidence.
